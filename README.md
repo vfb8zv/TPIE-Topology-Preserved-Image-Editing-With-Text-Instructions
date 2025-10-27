@@ -5,10 +5,10 @@ This is the official repository for the paper "TPIE: Topology-Preserved Image Ed
 ## Abstract:
 Preserving topological structures is important in real-world applications, particularly in sensitive domains such as healthcare and medicine, where the correctness of human anatomy is critical. However, most existing image editing models focus on manipulating intensity and texture features, often overlooking object geometry within images. To address this issue, this paper introduces a novel method, Topology-Preserved Image Editing with text instructions (TPIE), that for the first time ensures the topology and geometry remaining intact in edited images through text-guided generative diffusion models. More specifically, our method treats newly generated samples as deformable variations of a given input template, allowing for controllable and structure-preserving edits. Our proposed TPIE framework consists of two key modules: (i) an autoencoder-based registration network that learns latent representations of object transformations, parameterized by velocity fields, from pairwise training images; and (ii) a novel latent conditional geometric diffusion (LCDG) model efficiently capturing the data distribution of learned transformation features conditioned on custom-defined text instructions. We validate TPIE on a diverse set of 2D and 3D images and compare them with state-of-the-art image editing approaches. Experimental results show that our method outperforms other baselines in generating more realistic images with well-preserved topology.
 
-![TPIE Network](media/TPIE_model.jpg)
+![TPIE Network](TPIE_model.jpg)
 
 ## Demo:
-![TPIE Demo](media/TPIE-demo.gif)
+![TPIE Demo](TPIE-demo.gif)
 
 ## Repository Details:
 
